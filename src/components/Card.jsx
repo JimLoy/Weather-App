@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./Card.module.css";
-import { IoCloseCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { IoCloseCircleOutline } from "react-icons/io5";
+import Temp from "./Temp"
+import styles from "../styles/Card.module.css";
 
 export default function Card(props) {
   const { max, min, name, img, onClose, primary, cityId } = props;
@@ -24,17 +25,6 @@ export default function Card(props) {
         <Temp label="Min" temp={min} />
         <Temp label="Max" temp={max} />
       </div>
-    </div>
-  );
-}
-
-// Mala practica ALERT
-// Esto debería estar en un archivo aparte
-function Temp({ label, temp }) {
-  return (
-    <div className={styles.temp}>
-      <span>{label}</span>
-      <span>{temp}º</span>
     </div>
   );
 }

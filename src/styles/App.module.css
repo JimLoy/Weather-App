@@ -20,13 +20,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr minmax(12rem, 20vh);
+  border-radius: 1.5rem;
 }
 
 .app,
 .container {
-  background-image: url("./assets/bkg4.jpg");
+  background-image: url("../assets/bkg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  border-radius: 1.5rem;
+  
 }

@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import fetchCity from "./services/fetchCity";
 import fetchCoords from "./services/fetchCoords.js";
 
-import styles from "../styles/App.module.css";
+import styles from "./styles/App.module.css";
 import CitiesPage from "./views/CitiesPage";
 import CityDetail from "./views/CityDetail";
 import Nav from "./components/Nav";
@@ -52,9 +52,6 @@ function App() {
             return <CityDetail id={id} onBack={history.goBack} />;
           }}
         />
-        <Route path="/about">
-          <h1 style={{ color: "white" }}>About</h1>
-        </Route>
       </div>
     </div>
   );

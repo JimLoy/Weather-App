@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./SearchBar.module.css";
 import { IoAdd } from "react-icons/io5";
+import styles from "../styles/SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
   // acá va tu código
