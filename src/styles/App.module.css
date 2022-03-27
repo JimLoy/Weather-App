@@ -17,9 +17,8 @@
   height: 70vh;
   margin: 15vh 15vw;
   top: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr minmax(12rem, 20vh);
+  display: flex;
+  align-items: flex-end;
   border-radius: 1.5rem;
 }
 

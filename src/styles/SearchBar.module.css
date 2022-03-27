@@ -1,6 +1,7 @@
 .searchBar {
   display: flex;
-  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
   margin-left: 1.5rem;
 }
 .input {
@@ -35,3 +36,4 @@
 .button:hover {
   background-color: #ffffff60;
 }
+

@@ -11,12 +11,10 @@ export default function Card(props) {
     <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
       <Link to={`/city/${cityId}`} className={styles.name}>
         {name}
-        {!primary && (
-          <button className={styles.button} onClick={onClose}>
-            <IoCloseCircleOutline />
-          </button>
-        )}
       </Link>
+      <button className={styles.button} onClick={onClose}>
+        <IoCloseCircleOutline />
+      </button>
       <img
         src={`http://openweathermap.org/img/wn/${img}@2x.png`}
         alt="Icono del clima"

@@ -1,5 +1,5 @@
 import React from "react";
-import { IoAdd } from "react-icons/io5";
+import { IoChevronForwardSharp } from "react-icons/io5";
 import styles from "../styles/SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch }) {
       <input
         className={styles.input}
         id="searchInput"
-        placeholder="Agregar una ciudad..."
+        placeholder="Type city name"
         autoComplete="off"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -28,7 +28,7 @@ export default function SearchBar({ onSearch }) {
         }}
       />
       <button className={styles.button} onClick={handleOnSearch}>
-        <IoAdd />
+        <IoChevronForwardSharp />
       </button>
     </div>
   );

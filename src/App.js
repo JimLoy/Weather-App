@@ -6,8 +6,8 @@ import fetchCoords from "./services/fetchCoords.js";
 
 import styles from "./styles/App.module.css";
 import CitiesPage from "./views/CitiesPage";
-import CityDetail from "./views/CityDetail";
-import Nav from "./components/Nav";
+
+
 
 function App() {
   const [data, setData] = React.useState([]);
@@ -44,14 +44,6 @@ function App() {
             onSearch={onSearch}
           />
         </Route>
-        <Route path="/" component={Nav} />
-        <Route
-          path="/city/:id"
-          render={({ match, history }) => {
-            const id = parseInt(match.params.id);
-            return <CityDetail id={id} onBack={history.goBack} />;
-          }}
-        />
       </div>
     </div>
   );
