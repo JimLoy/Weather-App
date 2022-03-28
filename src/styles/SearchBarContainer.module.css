@@ -1,0 +1,11 @@
+.SearchBarContainer {
+  height: 8vh;
+  width: 50%;
+  min-height: 5rem;
+  display: flex;
+  justify-content:center;
+  background-color: #00000041;
+  backdrop-filter: blur(16px);
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}

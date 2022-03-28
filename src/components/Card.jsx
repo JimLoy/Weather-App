@@ -1,17 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import Temp from "./Temp"
 import styles from "../styles/Card.module.css";
 
-export default function Card(props) {
-  const { max, min, name, img, onClose, primary, cityId } = props;
-  // acá va tu código
+export default function Card({ max, min, name, img, onClose, cityId }) {
   return (
-    <div className={`${styles.card} ${primary ? styles.primary : ""}`}>
-      <Link to={`/city/${cityId}`} className={styles.name}>
-        {name}
-      </Link>
+    <div className={styles.card}>
+      <h1 className={styles.name}>{name}</h1>
       <button className={styles.button} onClick={onClose}>
         <IoCloseCircleOutline />
       </button>

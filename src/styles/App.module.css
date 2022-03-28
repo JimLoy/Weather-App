@@ -18,6 +18,7 @@
   margin: 15vh 15vw;
   top: 0;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   border-radius: 1.5rem;
 }

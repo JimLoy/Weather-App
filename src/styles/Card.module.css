@@ -8,29 +8,10 @@
   min-height: 12rem;
   color: #181818;
 }
-.card + .card {
-  border-left: solid 1px #0000001e;
-}
 
 .card > img {
   width: 5rem;
   height: 5rem;
-}
-
-.primary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh 15vh;
-  width: 20rem;
-  padding: 0 0.5rem;
-}
-.primary > .name {
-  margin-top: 1.25rem;
-  grid-column: 1 / span 2;
-}
-.primary > img {
-  width: 8rem;
-  height: 8rem;
 }
 
 .name {

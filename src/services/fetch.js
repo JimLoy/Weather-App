@@ -1,21 +1,21 @@
 export default async function fetchData(path) {
   const r = await fetch(path);
-  const recurso = await r.json();
-  let ciudad;
-  if (recurso.main !== undefined) {
-    ciudad = {
-      min: Math.round(recurso.main.temp_min),
-      max: Math.round(recurso.main.temp_max),
-      img: recurso.weather[0].icon,
-      id: recurso.id,
-      wind: recurso.wind.speed,
-      temp: recurso.main.temp,
-      name: recurso.name,
-      weather: recurso.weather[0].main,
-      clouds: recurso.clouds.all,
-      latitud: recurso.coord.lat,
-      longitud: recurso.coord.lon,
+  const resource = await r.json();
+  let city;
+  if (resource.main !== undefined) {
+    city = {
+      min: Math.round(resource.main.temp_min),
+      max: Math.round(resource.main.temp_max),
+      img: resource.weather[0].icon,
+      id: resource.id,
+      wind: resource.wind.speed,
+      temp: resource.main.temp,
+      name: resource.name,
+      weather: resource.weather[0].main,
+      clouds: resource.clouds.all,
+      latitude: resource.coord.lat,
+      longitude: resource.coord.lon,
     };
   }
-  return ciudad;
+  return city;
 }
