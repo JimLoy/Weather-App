@@ -6,13 +6,14 @@ export default async function fetchData(path) {
     city = {
       min: Math.round(resource.main.temp_min),
       max: Math.round(resource.main.temp_max),
+      feels: Math.round(resource.main.feels_like),
+      humidity: resource.main.humidity,
       img: resource.weather[0].icon,
       id: resource.id,
       wind: resource.wind.speed,
-      temp: resource.main.temp,
+      temp: Math.round(resource.main.temp),
       name: resource.name,
-      weather: resource.weather[0].main,
-      clouds: resource.clouds.all,
+      country: resource.sys.country,
       latitude: resource.coord.lat,
       longitude: resource.coord.lon,
     };
