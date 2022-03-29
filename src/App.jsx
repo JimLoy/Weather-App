@@ -12,10 +12,6 @@ export default function App() {
     fetchCity(ciudad, setData);
   }
 
-  /* function handleOnClose() {
-    setData({});
-  } */
-
   React.useEffect(() => {
     if (navigator.geolocation)
       navigator.geolocation.getCurrentPosition((pos) => {
