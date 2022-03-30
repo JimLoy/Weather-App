@@ -1,28 +1,27 @@
 import React from "react";
 import styles from "../styles/WeatherData.module.css"
 import Temp from "../components/Temp"
-import stylesCard from "../styles/Card.module.css";
+
 
 export default function WeatherData({ city }) {
   return(
     <div className={styles.weatherDataContainer}>
-      <div className={stylesCard.card}>
-        <h1 className={stylesCard.name}>{city.name}</h1>
-        <img
-          src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
-          alt="Icono del clima"
-        />
-        <div className={stylesCard.temps}>
-          <Temp label="Min" temp={city.min} />
-          <Temp label="Max" temp={city.max} />
+      <div className={styles.card}>
+        <div className={styles.nameImgContainer}>
+          <h1 className={styles.name}>{city.name}, {city.country}</h1>
+          <img
+            src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
+            alt="Icono del clima"
+          />
         </div>
-        <p>Feels like: {city.feels}º</p>
-        <p>Humidity: {city.humidity}</p>
-        <p>Wind: {city.wind}</p>
-        <p>Temp: {city.temp}º</p>
-        <p>Country: {city.country}</p>
-        <p>Latitude: {city.latitude}</p>
-        <p>Longitude: {city.longitude}</p>
+        <div className={styles.temps}>
+          <Temp label="Temp" temp={city.temp} icon={"º"}/>
+          <Temp label="Min" temp={city.min} icon={"º"}/>
+          <Temp label="Max" temp={city.max} icon={"º"}/>
+          <Temp label="Feels like" temp={city.feels} icon={"º"}/>
+          <Temp label="Humidity" temp={city.humidity} icon={"%"}/>
+          <Temp label="Wind" temp={city.wind} icon={"km/h"}/>
+        </div>
       </div>
     </div>
   )
