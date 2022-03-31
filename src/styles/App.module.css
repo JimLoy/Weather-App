@@ -29,5 +29,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  
+}
+
+.err{
+  display: flex;
+  font-size: 4rem;
+  align-self:center;
 }
