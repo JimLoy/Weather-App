@@ -24,7 +24,9 @@ export default function App() {
       <div className={styles.bkg} />
       <div className={styles.container}>
         {
-          data === false ? "" : data !== null ? <WeatherData city={data}/> : <h1>City not found</h1>
+          data === false ? "" : data !== null 
+            ? <WeatherData city={data}/> 
+            : <h1 className={styles.err}>City not found</h1>
         }
         <SearchBarContainer onSearch={onSearch}/>
       </div>

@@ -18,7 +18,7 @@ export default function WeatherData({ city }) {
           <Temp label="Temp" temp={city.temp} icon={"º"}/>
           <Temp label="Min" temp={city.min} icon={"º"}/>
           <Temp label="Max" temp={city.max} icon={"º"}/>
-          <Temp label="Feels like" temp={city.feels} icon={"º"}/>
+          <Temp label="Feeling" temp={city.feels} icon={"º"}/>
           <Temp label="Humidity" temp={city.humidity} icon={"%"}/>
           <Temp label="Wind" temp={city.wind} icon={"km/h"}/>
         </div>
