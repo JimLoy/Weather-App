@@ -1,4 +1,5 @@
 import fetchData from "./fetch";
+require('dotenv').config()
 
 const apiKey = process.env.REACT_APP_APIKEY;
 

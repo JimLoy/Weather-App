@@ -7,9 +7,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /*So that the user cannot select anything*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+
+  color: var(--color-font)
 }
 
 code {
   font-family: 'Bebas Neue', Consolas, "Courier New",
     monospace;
 }
+
+:root{
+  --black-background: #0002;
+  --color-font:#f6dcc5;
+} 

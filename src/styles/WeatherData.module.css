@@ -10,20 +10,20 @@
   flex-direction:column;
   justify-content: flex-start;
   align-items: center;
-  color: #181818;
 }
 
 .nameImgContainer{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background: var(--black-background);
+  border-radius: 1.5rem;
 }
 
-.nameImgContainer img {
-  max-width: 20rem;
-  max-height: 20rem;
-  margin-right: 5rem;
-  margin-top: 5rem;
+.image {
+  position: relative;
+  right: 5rem;
+  object-fit: contain; 
 }
 
 .name {
@@ -32,7 +32,6 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  color: #e9e9e9;
   font-size: 4rem;
   padding: 1rem;
   margin-left: 2rem;
@@ -44,9 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   font-size: 3rem;
-  
 }
 
 .temp + .temp{
