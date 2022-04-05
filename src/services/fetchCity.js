@@ -1,11 +1,10 @@
 import fetchData from "./fetch";
-//require('dotenv').config()
 
-//const apiKey = process.env.REACT_APP_APIKEY;
+const apiKey = process.env.REACT_APP_APIKEY;
 
-export default function fetchCity(city, setData) {   //&appid=${apiKey}
+export default function fetchCity(city, setData) {   
   fetchData(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
   ).then(cityData => {
     if (cityData) setData(cityData);
     else setData(null);
