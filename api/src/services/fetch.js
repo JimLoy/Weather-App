@@ -2,7 +2,8 @@ const axios = require('axios');
 
 async function fetchData(path) {
   try{
-    const resource = await axios(path).data;
+    let resource = await axios(path);
+    resource = resource.data
     let city;
     if (resource.main !== undefined) {
       city = {

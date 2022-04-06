@@ -11,7 +11,7 @@ export default function WeatherData({ city }) {
           <h1 className={styles.name}>{city.name}, {city.country}</h1>
           <img
             src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
-            alt="Icono del clima"
+            alt="Weather icon"
             className={styles.image}
           />
         </div>

@@ -1,23 +1,20 @@
 import React from "react";
-import fetchCity from "./services/fetchCity";
-//import fetchCoords from "./services/fetchCoords.js";
 import SearchBarContainer from "./views/SearchBarContainer";
 import WeatherData from "./views/WeatherData";
+import axios from "axios";
 import styles from "./styles/App.module.css";
 
 export default function App() {
   const [data, setData] = React.useState(false);
 
-  function onSearch(ciudad) {
-    fetchCity(ciudad, setData);
+  async function onSearch(city) {
+    try{
+      const apiData = await axios(`http://localhost:3001/?city=${city}`);
+      setData(apiData.data)
+    } catch(err) {
+      setData(null)
+    }
   }
-
-/*React.useEffect(() => {
-    if (navigator.geolocation)
-      navigator.geolocation.getCurrentPosition((pos) => {
-        fetchCoords(pos.coords.latitude, pos.coords.longitude, setData);
-      });
-  }, []); */
 
   return (
     <div className={styles.app}>
