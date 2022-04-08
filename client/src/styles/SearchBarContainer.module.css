@@ -10,3 +10,19 @@
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
 }
+
+@media only screen and (max-width: 950px){
+
+  .SearchBarContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+  .SearchBarContainer {
+    width: 100%;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+}

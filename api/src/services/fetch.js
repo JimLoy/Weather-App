@@ -22,7 +22,7 @@ async function fetchData(path) {
       };
     }
     return city;
-  } catch(err) { console.error(err) }
+  } catch(err) { return {err} }
 }
 
 module.exports = fetchData;

@@ -53,9 +53,79 @@
 .temps {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  position: relative;
+  top: 8rem;
 }
 
 @media only screen and (max-width: 1400px) {
-  
+
+  .temps {
+    flex-wrap: wrap;
+    justify-content:center;
+    top: 2rem;
+  }
+
+  .temp + .temp {
+    margin-left: 0;
+  }
+
+  .temp {
+    margin: .5rem;
+    font-size: 2.8rem;
+  }
+
+  .image {
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .name {
+    font-size: 2.2rem;
+    margin-left: 1rem;
+  }
+
+  .image {
+    right: 1rem;
+  }
+
+  .temp {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  .temps {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .nameImgContainer{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .name {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-right: .5rem;
+  }
+
+  .image {
+    right: -4rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  .temp {
+    font-size: 2rem;
+    margin: .7rem;
+    margin-top: 0;
+  }
+
+  .temps {
+    justify-content: center;
+  }
 }

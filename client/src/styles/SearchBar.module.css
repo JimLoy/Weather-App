@@ -9,8 +9,9 @@
   border: none;
   color: var(--color-font);
   font-size: 1.5rem;
-  max-width: 20rem;
-  
+  width: 70%;
+  margin-left: 1rem;
+  padding-top: 2px;
 }
 .input:focus {
   outline: none;
@@ -21,13 +22,12 @@
   font-size: 2rem;
   letter-spacing: .25rem;
 }
-
 .button {
   border: solid 2px transparent;
   border-radius: 9999px;
   width: 3rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,3 +40,10 @@
   background-color: #ffffff60;
 }
 
+
+@media only screen and (max-width: 600px){
+
+  .input::placeholder {
+    letter-spacing: 0;
+  }
+}

@@ -21,7 +21,7 @@ export default function App() {
       <div className={styles.bkg} />
       <div className={styles.container}>
         {
-          data === false ? "" : data !== null 
+          data === false ? "" : data !== null && data.err === undefined 
             ? <WeatherData city={data}/> 
             : <h1 className={styles.err}>City not found</h1>
         }
