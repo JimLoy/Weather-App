@@ -1,5 +1,5 @@
 const server = require('./src/server')
 
-server.listen(3001,()=>{
-  console.log('Listening at 3001')
+server.listen(process.env.PORT,()=>{
+  console.log(`Listening at ${process.env.PORT}`)
 })

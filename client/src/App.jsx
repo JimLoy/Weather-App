@@ -9,7 +9,7 @@ export default function App() {
 
   async function onSearch(city) {
     try{
-      const apiData = await axios(`http://localhost:3001/?city=${city}`);
+      const apiData = await axios(`/?city=${city}`);
       setData(apiData.data)
     } catch(err) {
       setData(null)
