@@ -1,6 +1,6 @@
 # Weather App
 
-Es un front con React y un pequeño back con express (Node), que retorna la temperatura, velocidad del viento, humedad y sensacion termica de la ciudad que escribas consumiendo la informacion de la api https://openweathermap.org/api
+El front-end esta desarrollado con React y un reducido back-end con express (en Node). Devuelve la temperatura, velocidad del viento, humedad y sensacion termica de la ciudad que escribas consumiendo la informacion de la api [OpenWeather](https://openweathermap.org/api)
 
 
 ## Instrucciones para correr el proyecto
@@ -17,4 +17,4 @@ Comienza a correr la aplicación de forma local por lo que se puede ver desde el
 http://localhost:3000
 
 
-## Deploy in https://weather-app-jimloy.herokuapp.com
+## [Deploy](https://weather-app-jimloy.herokuapp.com)
