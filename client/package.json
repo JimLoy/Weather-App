@@ -2,7 +2,7 @@
   "name": "06-react-intro",
   "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.26.1",
+    "axios": "^1.6.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
