@@ -16,5 +16,3 @@ Instala todas las dependecias necesarias para correr el proyecto correctamente t
 Comienza a correr la aplicación de forma local por lo que se puede ver desde el navegador accediendo a
 http://localhost:3000
 
-
-## [Deploy](https://weather-app-jimloy.herokuapp.com)
